@@ -20,6 +20,20 @@ const ItemCarousel = ({ items }) => {
         pagination={{
           clickable: true,
         }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+          },
+        }}
         navigation={true}
         lazyPreloadPrevNext={true}
         modules={[Keyboard, Pagination, Navigation]}

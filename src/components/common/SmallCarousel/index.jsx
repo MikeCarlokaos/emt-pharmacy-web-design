@@ -20,6 +20,20 @@ const SmallCarousel = ({ sales }) => {
         pagination={{
           clickable: true,
         }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 25,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+          },
+        }}
         navigation={true}
         lazyPreloadPrevNext={true}
         modules={[Keyboard, Pagination, Navigation]}

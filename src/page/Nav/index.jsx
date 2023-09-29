@@ -11,11 +11,11 @@ const Nav = () => {
       <div className="w-full min-w-[20px] flex flex-col">
         <div
           style={{ backgroundImage: `url(${navBg})` }}
-          className="w-full h-24 bg-cover flex justify-between items-center px-16 shrink-0"
+          className="w-full gap-5 pb-5 bg-cover flex flex-col justify-between items-center px-16 shrink-0 md:h-24 md:flex-row md:gap-0 md:pb-0"
         >
           <div className="w-30 h-full flex">
             <a href="http://" target="_blank" rel="noopener noreferrer">
-              <img src={logo} alt="logo" className="w-full h-full" />
+              <img src={logo} alt="logo" className="w-32 md:w-full md:h-full" />
             </a>
           </div>
           <div>
@@ -74,14 +74,14 @@ const Nav = () => {
             </ul>
           </div>
         </div>
-        <nav className="w-full bg-primary/10 px-16">
+        <nav className="w-full  bg-primary/10 px-16">
           <ul className="flex">
             <li className="flex w-20 justify-center items-center self-stretch border-x-2 border-primary">
               <a
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-full text-center p-2 hover:shadow hover:font-bold"
+                className="w-full h-full flex justify-center items-center text-center p-2 hover:shadow hover:font-bold"
               >
                 <span className="capitalize text-sm">home</span>
               </a>
@@ -91,7 +91,7 @@ const Nav = () => {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-full text-center p-2 hover:shadow hover:font-bold"
+                className="w-full h-full  flex justify-center items-center text-center p-2 hover:shadow hover:font-bold"
               >
                 <span className="capitalize text-sm">about us</span>
               </a>
@@ -101,7 +101,7 @@ const Nav = () => {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-full text-center p-2 hover:shadow hover:font-bold"
+                className="w-full h-full  flex justify-center items-center text-center p-2 hover:shadow hover:font-bold"
               >
                 <span className="capitalize text-sm">shop</span>
               </a>
@@ -111,7 +111,7 @@ const Nav = () => {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-full text-center p-2 hover:shadow hover:font-bold"
+                className="w-full h-full  flex justify-center items-center text-center p-2 hover:shadow hover:font-bold"
               >
                 <span className="capitalize text-sm">contacts</span>
               </a>
@@ -121,7 +121,7 @@ const Nav = () => {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full h-full text-center p-2 hover:shadow hover:font-bold"
+                className="w-full h-full  flex justify-center items-center text-center p-2 hover:shadow hover:font-bold"
               >
                 <span className="capitalize text-sm">news</span>
               </a>

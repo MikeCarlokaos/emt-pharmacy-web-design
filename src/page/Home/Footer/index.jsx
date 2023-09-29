@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <section className="w-screen bg-primary/20 pt-5">
-      <div className="w-full flex px-16 pb-5 justify-between capitalize">
+      <div className="w-full flex flex-col text-center px-16 pb-5 justify-between capitalize md:flex-row md:text-start">
         <div>
           <h3 className="font-semibold text-lg pb-2">about</h3>
           <ul>
