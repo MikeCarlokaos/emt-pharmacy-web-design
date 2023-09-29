@@ -10,27 +10,29 @@ import { Keyboard, Pagination, Navigation } from "swiper/modules";
 
 const BigCarousel = ({ banners }) => {
   return (
-    <Swiper
-      slidesPerView={1}
-      spaceBetween={30}
-      keyboard={{
-        enabled: true,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      loop={true}
-      navigation={true}
-      lazyPreloadPrevNext={true}
-      modules={[Keyboard, Pagination, Navigation]}
-      className="w-screen"
-    >
-      {banners.map((banner) => (
-        <SwiperSlide key={banner.id}>
-          <img src={banner.image} alt={banner.title} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="w-[98vw]">
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        keyboard={{
+          enabled: true,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        loop={true}
+        navigation={true}
+        lazyPreloadPrevNext={true}
+        modules={[Keyboard, Pagination, Navigation]}
+        className="w-[98vw]"
+      >
+        {banners.map((banner) => (
+          <SwiperSlide key={banner.id}>
+            <img src={banner.image} alt={banner.title} className="w-full" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
